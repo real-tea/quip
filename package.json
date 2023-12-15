@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^4.30.0",
+    "@radix-ui/themes": "^2.0.2",
     "axios": "^1.6.2",
+    "convex": "^1.6.3",
     "next": "14.0.4",
     "next-themes": "^0.2.1",
+    "nvm": "^0.0.4",
     "react": "^18",
     "react-dom": "^18",
     "sonner": "^1.2.4",
