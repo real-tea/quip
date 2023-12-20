@@ -1,23 +1,22 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import { ThemeProvider } from "@/components/provider/theme-provider";
-import { Toaster } from 'sonner';
-import ModalProvider from "@/components/provider/modal-provider";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import { ConvexClientProvider } from "@/components/providers/convex-provider";
+import { Toaster } from "sonner";
+import ModalProvider from "@/components/providers/modal-provider";
+import { EdgeStoreProvider } from "@/lib/edgestore";
 
-import { EdgeStoreProvider } from '@/lib/edgestore';
-import { ConvexClientProvider } from '@/components/provider/convex-provider';
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Quip',
-  description: 'All In one workspace for your everyday needs',
-  icons : {
-    icon : "/logo.svg"
-  }
-}
-
+  title: "Notion",
+  description:
+    "A new tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team",
+  icons: {
+    icon: "/logo.svg",
+  },
+};
 
 export default function RootLayout({
   children,
